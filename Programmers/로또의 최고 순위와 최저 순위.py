@@ -14,3 +14,4 @@ def solution(lottos, win_nums):
         answer.append(7-both-count_zero) # 
         answer.append(7-both)
     return answer
+
