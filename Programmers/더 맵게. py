@@ -1,0 +1,13 @@
+from heapq import heapify, heappush, heappop
+def solution(scoville, k):
+    count=0 # 섞은 횟수
+    heapify(scoville)
+    
+    while scoville[0]<k:
+        try:
+            heappush(scoville, heappop(scoville)+(heappop(scoville)*2))
+            count+=1
+        except IndexError:
+            return -1
+        
+    return count
