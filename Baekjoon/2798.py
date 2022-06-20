@@ -11,4 +11,12 @@ for i in range(n):
             else:
                 card_sum=cards[i]+cards[j]+cards[k]
                 answer=max(answer, card_sum)
+             
+# # 순열 조합 라이브러리 사용
+# from itertools import combinations
+# for choose in combinations(cards, 3):
+#     tmp_sum=sum(choose)
+#     if answer<tmp_sum<=m:
+#         answer=tmp_sum
+
 print(answer)
