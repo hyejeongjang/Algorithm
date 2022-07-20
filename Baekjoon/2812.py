@@ -13,6 +13,6 @@ for number in num:
     stack.append(number)
 
 if k>0:
-    print(''.join(stack[:k]))
+    print(''.join(stack[:-k]))
 else:
     print(''.join(stack))
