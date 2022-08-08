@@ -23,5 +23,6 @@ while q:
             parent[i]=x
             q.append(i)
 
+            
 for i in parent[2:]:
     print(i)
