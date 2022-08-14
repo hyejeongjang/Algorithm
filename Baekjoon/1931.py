@@ -13,7 +13,7 @@ answer=0
 endtime=0
 
 for i in meeting:
-    if endtime<i[0]:
+    if endtime<=i[0]:
         endtime=i[1]
         answer+=1
 
