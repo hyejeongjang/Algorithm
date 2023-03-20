@@ -1,4 +1,24 @@
-# 2830 : 행성 X3
+# 2830 : 행성X3 : 조합을 문제를 풀었으나, 답은 맞지만 메모리 초과문제가 있음
+
+# import sys
+# from itertools import combinations
+# input=sys.stdin.readline
+
+# n=int(input()) # 거주민수
+# person=[]
+# sum=0 # 모든 친밀도의 합
+
+# for _ in range(n):
+#     name=person.append(int(input().strip()))
+
+# # 조합
+# combi=list(combinations(person,2))
+
+# for i,j in combi:
+#     sum+=i^j
+# print(sum)
+
+# 맞는 코드
 n = int(input())
 nums=[]
 for _ in range(n):
